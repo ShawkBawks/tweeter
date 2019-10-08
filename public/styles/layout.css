@@ -13,13 +13,25 @@ html {
 /*
  * Global layout stuff
  */
-
+ 
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: #f8ddb2;
   font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
+.container {
+  overflow-wrap: break-word;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f8ddb2;
+  /* margin */
+  color: #545149;
+
+  
+
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

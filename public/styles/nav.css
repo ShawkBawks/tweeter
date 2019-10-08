@@ -1,0 +1,24 @@
+.navlinks{
+  height: 120px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  padding: 1.5em;
+  text-align: right;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+nav {
+  color: #FFFFFF;
+  background-color:#4056A1;
+  font-size: 30px;
+  font-family: 'Bungee', cursive, sans-serif;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  padding: 1.5em;
+}
