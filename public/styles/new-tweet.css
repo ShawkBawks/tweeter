@@ -1,4 +1,9 @@
 
+.counter{
+  
+  
+}
+
 .new-tweet textarea{
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #f8ddb2;
@@ -24,8 +29,7 @@
   z-index: auto;
 }
 
-.new-tweet span.counter{
-}
+
 form{
   margin-top: 15px;
   display: flex;
