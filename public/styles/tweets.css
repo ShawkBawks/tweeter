@@ -1,0 +1,69 @@
+.tweets{
+border:2px black solid;
+/* padding: 2% 0; */
+margin: 2% 0;
+padding: 0.5em;
+
+}
+
+.tweet-name{
+  opacity: 0.5;
+  float: left;
+}
+
+
+.tweet-age{
+  display: inline-flex;
+}
+
+.tweet-handle{
+  float: top;
+  float: right;
+  opacity: 0.0;
+}
+
+.tweet-icon{
+  padding-top: 35px;
+  float: right;
+}
+
+.tweets img{
+  border-radius: 80%;
+  width: 10%;
+  float: left;
+  float: top;
+}
+
+.tweet-body{
+  border-bottom:2px black solid;
+  padding-bottom: 15px;
+   margin: 0 auto;
+   width: 98%;
+   display: inline-block;
+   font-size: 70%;
+}
+
+
+.tweets:hover{
+ font-weight: 600;
+ box-shadow: 5px 10px #888888;
+ opacity: 100;
+}
+
+article:hover .tweet-handle{
+  opacity: 100;
+}
+
+.tweets:hover .tweet-name{
+  font-family: 'Bungee', cursive;
+}
+
+/* article header a{
+  float: right;
+  opacity: 0.0; */
+  /* visibility: hidden;
+} */
+/* 
+article header a:hover{
+  opacity: 1.0;
+} */

@@ -1,91 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-    
-    <!--- Fonts! -->
-    <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,400,700,700i&display=swap" rel="stylesheet">
+<head>
+  <!-- Meta Information -->
+  <title>Tweeter - Home Page</title>
 
-    <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
 
-    <!-- External JS -->
-    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-    
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-    <script type="text/javascript" src="/scripts/app.js"></script>
+  <!--- Fonts! -->
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,400,700,700i&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline&display=swap" rel="stylesheet">
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- External JS -->
+  <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+
+  <!-- App JS -->
+  <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+  <script type="text/javascript" src="/scripts/app.js"></script>
 
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <!-- Top nav bar (fixed) -->
-    <nav>
-      <span  class="nav">Tweeter</span>
-      <!-- <p class="navlinks">Write New Tweet</span> -->
+  <!-- Top nav bar (fixed) -->
+  <nav>
+    <span class="nav">Tweeter</span>
+    <!-- <p class="navlinks">Write New Tweet</span> -->
 
-    </nav>
+  </nav>
 
-    <header class="header";>
-        <div class="headIMG">
-            <img src="/images/machooo.jpeg"> 
+  <header class="header">
+    <div class="headIMG">
+      <img src="/images/machooo.jpeg">
+    </div>
+
+    <div class="headName">
+      <h2>Macho Man Randy Savage - Cream of The Crop</h2>
+    </div>
+  </header>
+
+
+
+  <!-- Page-specific (main) content here -->
+  <main class="container">
+    <section class="new-tweet">
+      <form method="POST" action='/tweets'>
+        <textarea rows="1" name="text" placeholder="What are you humming about?"></textarea>
+        <div>
+          <input type="submit" value="Tweet">
+          <span class="counter">140</span>
         </div>
-        
-        <div class="headName" >
-            <h2>Macho Man Randy Savage - Cream of The Crop</h2>
+      </form>
+    </section>
+
+
+
+
+    <article class='tweets'>
+      <header>
+        <img src="https://i.imgur.com/5fUVPRP.png">
+        Macho Man Randy Savage
+        <a class='tweet-handle'>@CreamOfThaCrop</a>
+      </header>
+      <span class='tweet-body'>Bonesaw's reaaaaddyyyyyy!</span>
+      <footer>
+        <h6 class="tweet-age">10 days ago</h6>
+        <div class='tweet-icon'>
+          <i class="fa fa-flag"></i>
+          <i class="fa fa-heart"></i>
+          <i class="fa fa-refresh"></i>
         </div>
-    </header>
+      </footer>
+    </article>
 
 
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-        <section class="new-tweet">
-            <form method="POST" action='/tweets'>
-              <textarea rows="1" name="text" placeholder="What are you humming about?"></textarea>
-              <div>
-                <input type="submit" value="Tweet">
-              <span class="counter">140</span>
-            </div>
-            </form>
-          </section>
-      <p>is this the right stuffis this the right stuffis this the right stuffis this the right stuffis this the right stuffis this the right stuffis this the right stuff
-        is this the right stuffis this the right stuffis this the right stuffis this the right stuffis this the right stuffis this the right stuffis this the right stuff </p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
-      <p>is this the right stuff</p>
+  </main>
 
-    </main>
+</body>
 
-  </body>
 </html>
