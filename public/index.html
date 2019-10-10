@@ -27,6 +27,9 @@
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   <script type="text/javascript" src="/scripts/app.js"></script>
 
+  <!-- Zoom Prevent -->
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
 
 </head>
 
@@ -35,7 +38,8 @@
   <!-- Top nav bar (fixed) -->
   <nav>
     <span class="nav">Tweeter</span>
-    <button class='navbutton'>Write New Tweet</button>
+    <button class='glow-on-hover'>Write New Tweet</button>
+    
 
   </nav>
 
@@ -53,6 +57,7 @@
 
   <!-- Page-specific (main) content here -->
   <main class="container">
+    <div class="error-handles"></div>
     <section class="new-tweet">
       <form id="tweet-form" method="POST" action='/tweets'>
         <textarea class='tweet-text-area' rows="1" name="text" placeholder="What are you humming about?"></textarea>
@@ -72,7 +77,7 @@
         <h4 class="tweet-name">Macho Man Randy Savage </h4>
         <a class='tweet-handle'>@CreamOfThaCrop</a>
       </header>
-      <span class='tweet-body'>Bonesaw's reaaaaddyyyyyy!</span>
+      <span class='tweet-body'>Too hot to handle! Too cold to hold!</span>
       <footer>
         <h6 class="tweet-age">10 days ago</h6>
         <div class='tweet-icon'>

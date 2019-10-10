@@ -5,50 +5,56 @@
  */
 
 // Fake data taken from initial-tweets.json
-$(document).ready(function() {
-  $('#tweet-form').on("submit", function(event) {
+$(document).ready(function () {
+  $(".error-handles").hide();
+  $('.glow-on-hover').click(function () {
+    $('.new-tweet').slideToggle('slow');
+    $('.tweet-text-area').focus();
+  });
+
+  $('#tweet-form').on("submit", function (event) {
     event.preventDefault();
     let tweetBody = $(this).serialize();
     if (!$('.tweet-text-area').val()) {
-    alert("There needs to be something to tweet!");
-    }if ($('.tweet-text-area').val().length > 140){
-      alert("There are too many characters!");
+      $(".error-handles").html("&#9888;   There needs to be something to tweet!   &#9888;").show().delay(2000).fadeOut();
+    } if ($('.tweet-text-area').val().length > 140) {
+      $(".error-handles").html("&#9888;There are too many characters!&#9888;").show().delay(2000).fadeOut();
+    } else {
+      $.ajax({
+        method: "POST",
+        url: '/tweets',
+        data: tweetBody
+      })
+        .then(loadTweets);
     }
-    $.ajax({
-      method: "POST",
-      url: '/tweets',
-      data: tweetBody
-    })
-    .then(loadTweets);
   });
-  
-  const loadTweets = () => { 
-    $.get('/tweets', function(res){
+
+  const loadTweets = () => {
+    $.get('/tweets', function (res) {
       renderTweets(res);
     });
   }
-const renderTweets = function(tweets) {
-  $('#tweets-container').empty();
-for(let tweet of tweets){
-  let output = createTweetElement(tweet);
-  $(`#tweets-container`).prepend(output);
-}
-};
+  const renderTweets = function (tweets) {
+    $('#tweets-container').empty();
+    for (let tweet of tweets) {
+      let output = createTweetElement(tweet);
+      $(`#tweets-container`).prepend(output);
+    }
+  };
 
-// loops through tweets
-// calls createTweetElement for each tweet
-// takes return value and appends it to the tweets container
-const escape =  function(str) {
-  let div = $("<div>").text(str);
-  
-  return div[0].innerHTML;
-}
+  // loops through tweets
+  // calls createTweetElement for each tweet
+  // takes return value and appends it to the tweets container
+  const escape = function (str) {
+    let div = $("<div>").text(str);
+    return div[0].innerHTML;
+  }
 
-const createTweetElement = function(tweet) {
-  let date = new Date(tweet.created_at).toDateString();
-  // console.log("did we make it")
-  // let $tweet = $('<article>').addClass('tweet');
-  const $tweets = (`
+  const createTweetElement = function (tweet) {
+    let date = new Date(tweet.created_at).toDateString();
+    // console.log("did we make it")
+    // let $tweet = $('<article>').addClass('tweet');
+    const $tweets = (`
     <article class='tweets'>
       <header>
         <img src="${tweet.user.avatars}">
@@ -67,8 +73,8 @@ const createTweetElement = function(tweet) {
     </article>
   `);
 
-  return $tweets;
-};
-// renderTweets();
+    return $tweets;
+  };
+  // renderTweets();
 
 });

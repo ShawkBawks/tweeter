@@ -10,6 +10,13 @@ html {
   box-sizing: inherit;
 }
 
+.error-handles{
+  border: 3px solid red;
+  color: red;
+  
+  text-align: center;
+}
+
 /*
  * Global layout stuff
  */
@@ -28,6 +35,7 @@ body {
   background-color: #f8ddb2;
   /* margin */
   color: #545149;
+  z-index: 1;
 
   
 
