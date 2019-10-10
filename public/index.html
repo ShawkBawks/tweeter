@@ -35,7 +35,7 @@
   <!-- Top nav bar (fixed) -->
   <nav>
     <span class="nav">Tweeter</span>
-    <!-- <p class="navlinks">Write New Tweet</span> -->
+    <button class='navbutton'>Write New Tweet</button>
 
   </nav>
 
@@ -45,7 +45,7 @@
     </div>
 
     <div class="headName">
-      <h2>Macho Man Randy Savage - Cream of The Crop</h2>
+      <h2>Macho Man Randy Savage</h2>
     </div>
   </header>
 
@@ -54,8 +54,8 @@
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
-      <form method="POST" action='/tweets'>
-        <textarea rows="1" name="text" placeholder="What are you humming about?"></textarea>
+      <form id="tweet-form" method="POST" action='/tweets'>
+        <textarea class='tweet-text-area' rows="1" name="text" placeholder="What are you humming about?"></textarea>
         <div>
           <input type="submit" value="Tweet">
           <span class="counter">140</span>
@@ -69,7 +69,7 @@
     <article class='tweets'>
       <header>
         <img src="https://i.imgur.com/5fUVPRP.png">
-        Macho Man Randy Savage
+        <h4 class="tweet-name">Macho Man Randy Savage </h4>
         <a class='tweet-handle'>@CreamOfThaCrop</a>
       </header>
       <span class='tweet-body'>Bonesaw's reaaaaddyyyyyy!</span>
