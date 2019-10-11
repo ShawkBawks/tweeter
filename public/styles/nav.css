@@ -1,22 +1,8 @@
-nav {
-  color: #FFFFFF;
-  background-color:#4056A1;
-  font-size: 30px;
-  font-family: 'Bungee', cursive, sans-serif;
-  height: 120px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1300;
-  padding: 1.5em;
-}
-
 .glow-on-hover{
   font-family: 'Source Sans Pro';
   font-size: 20px;
   float: right;
-  background-color: #4056A1;
+  background-color: transparent;
 }
   
   .glow-on-hover {
@@ -25,7 +11,7 @@ nav {
       border: none;
       outline: none;
       color: #fff;
-      background: #4056A1;
+      background: transparent;
       cursor: pointer;
       position: relative;
       z-index: 0;
@@ -50,7 +36,7 @@ nav {
   }
   
   .glow-on-hover:active {
-      color: #4056A1;
+      color: transparent;
   }
   
   .glow-on-hover:active:after {
@@ -67,7 +53,7 @@ nav {
       position: absolute;
       width: 100%;
       height: 100%;
-      background: #4056A1;
+      background: transparent;
       left: 0;
       top: 0;
       border-radius: 10px;

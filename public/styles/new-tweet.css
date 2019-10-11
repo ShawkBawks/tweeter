@@ -1,21 +1,19 @@
 .new-tweet textarea{
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #f8ddb2;
+  background-color: #f0e6d6;
   border: none;
   border-bottom: 5px solid black;
   margin-bottom: 10px;
   z-index: auto;
   resize: none;
-
-  
 }
  .new-tweet input {
-   background-color:rgb(13, 13, 226);
-   border: 0px;
-   font-family: 'Bungee', cursive, sans-serif;
-   color: white;
-   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-   z-index: auto;
+  background-color:rgb(13, 13, 226);
+  border: 0px;
+  font-family: 'Bungee', cursive, sans-serif;
+  color: white;
+  box-shadow: 3px 5px #888888;
+  z-index: auto;
  }
 
 .new-tweet input.value{
@@ -37,17 +35,8 @@ form div{
 
 .new-tweet{
   font-family: 'Bungee', cursive, sans-serif;
-  background-color: #f8ddb2;
+  background-color: #f0e6d6;
   z-index: auto;
   margin: 0 auto;
+  display: none;
 }
-
-
-/* <main class="container">
-<section class="new-tweet">
-    <form method="POST" action='/tweets'>
-      <textarea name="text" placeholder="What are you humming about?"></textarea>
-      <input type="submit" value="Tweet">
-      <span class="counter">140</span>
-    </form>
-  </section> */

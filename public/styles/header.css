@@ -1,5 +1,4 @@
-.header{
-  /* background-color: #5c008a; */
+/* .header{
 background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
   background-color: teal;
   z-index: 1200;
@@ -12,10 +11,12 @@ background-image: url("https://www.transparenttextures.com/patterns/black-thread
   z-index: 1100;
   text-align: center;
   padding-top: 20px;
-  /* left: 400px; */
 }
 
 .headName{
   text-align: center;
 }
+
+Didn't want to delete the file, but this is unused upon completion. */
+
 

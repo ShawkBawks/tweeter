@@ -11,12 +11,12 @@
   <!--- Fonts! -->
   <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,400,700,700i&display=swap"
     rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline&display=swap" rel="stylesheet">
 
   <!-- App CSS -->
   <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
   <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-  <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="/styles/header.css" type="text/css" />   Unused, but didn't want to remove for evaluation purposes -->
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
   <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,17 +39,16 @@
   <nav>
     <span class="nav">Tweeter</span>
     <button class='glow-on-hover'>Write New Tweet</button>
-    
+
 
   </nav>
 
   <header class="header">
     <div class="headIMG">
-      <img src="/images/machooo.jpeg">
+      <img src="/images/machoman.png">
     </div>
-
     <div class="headName">
-      <h2>Macho Man Randy Savage</h2>
+      <span>Macho Man Randy Savage</span>
     </div>
   </header>
 
@@ -70,24 +69,24 @@
 
 
 
-<div id='tweets-container'>
-    <article class='tweets'>
-      <header>
-        <img src="https://i.imgur.com/5fUVPRP.png">
-        <h4 class="tweet-name">Macho Man Randy Savage </h4>
-        <a class='tweet-handle'>@CreamOfThaCrop</a>
-      </header>
-      <span class='tweet-body'>Too hot to handle! Too cold to hold!</span>
-      <footer>
-        <h6 class="tweet-age">10 days ago</h6>
-        <div class='tweet-icon'>
-          <i class="fa fa-flag"></i>
-          <i class="fa fa-heart"></i>
-          <i class="fa fa-refresh"></i>
-        </div>
-      </footer>
-    </article>
-  </div>
+    <div id='tweets-container'>
+      <article class='tweets'>
+        <section>
+          <img src="https://i.imgur.com/5fUVPRP.png">
+          <div class="tweet-name">Macho Man Randy Savage </div>
+          <a class='tweet-handle'>@CreamOfThaCrop</a>
+        </section>
+        <span class='tweet-body'>Too hot to handle! Too cold to hold!</span>
+        <footer>
+          <div class="tweet-age">10 days ago</div>
+          <div class='tweet-icon'>
+            <i class="fa fa-flag"></i>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-refresh"></i>
+          </div>
+        </footer>
+      </article>
+    </div>
 
 
   </main>

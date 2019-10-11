@@ -25,13 +25,16 @@ $(document).ready(function () {
         url: '/tweets',
         data: tweetBody
       })
-        .then(loadTweets);
+        .then(loadTweets)
+
     }
   });
 
   const loadTweets = () => {
     $.get('/tweets', function (res) {
-      renderTweets(res);
+      renderTweets(res)
+      $('.tweet-text-area').val('')
+      $('.counter').text('140');
     });
   }
   const renderTweets = function (tweets) {
@@ -63,7 +66,7 @@ $(document).ready(function () {
       </header>
       <span class='tweet-body'>${escape(tweet.content.text)}</span>
       <footer>
-        <h6 class="tweet-age">${date}</h6>
+        <div class="tweet-age">${date}</div>
         <div class='tweet-icon'>
           <i class="fa fa-flag"></i>
           <i class="fa fa-heart"></i>
