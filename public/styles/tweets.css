@@ -23,6 +23,7 @@
 .tweet-icon{
   float: right;
   display: inline-flex;
+  opacity: 0;
 }
 
 .tweets img{
@@ -41,6 +42,11 @@
   font-size: 70%;
 }
 
+article:hover .tweet-icon{
+  float: right;
+  display: inline-flex;
+  opacity: 100;
+}
 
 .tweets:hover{
   font-weight: 600;
