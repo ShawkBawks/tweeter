@@ -15,3 +15,18 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Features
+
+-Hover over tweets to enable a shadowbox display, showing the users handle and icons in the footer.
+-Works in both tablet and desktop format
+-Randomly generated Tweeter user names and handles for new tweets.
+
+## Screenshots
+
+!["Fullscreen Resolution"](/docs/Fullscreen-Front.png)
+!["Fullscreen Button View"](/docs/Fullscreen-Button.png)
+!["Fullscreen Tweetbox"](/docs/Fullscreen-TweetBox.png)
+!["Fullscreen New Tweets"](/docs/Fullscreen-NewTweets.png)
+!["Tablet Tweet Display"](/docs/Tablet-Tweets.png)
+!["Tablet Hover Display"](/docs/Tablet-Hover.png)
