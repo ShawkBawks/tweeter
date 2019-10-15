@@ -30,13 +30,6 @@ $(document).ready(function () {
     }
   });
 
-  const loadTweets = () => {
-    $.get('/tweets', function (res) {
-      renderTweets(res)
-      $('.tweet-text-area').val('')
-      $('.counter').text('140');
-    });
-  }
   const renderTweets = function (tweets) {
     $('#tweets-container').empty();
     for (let tweet of tweets) {
@@ -44,7 +37,14 @@ $(document).ready(function () {
       $(`#tweets-container`).prepend(output);
     }
   };
-
+  
+  const loadTweets = () => {
+    $.get('/tweets', function (res) {
+      renderTweets(res)
+      $('.tweet-text-area').val('')
+      $('.counter').text('140');
+    });
+  }
   // loops through tweets
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
@@ -78,6 +78,6 @@ $(document).ready(function () {
 
     return $tweets;
   };
-  // renderTweets();
+  loadTweets();
 
 });
