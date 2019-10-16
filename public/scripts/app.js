@@ -55,8 +55,6 @@ $(document).ready(function () {
 
   const createTweetElement = function (tweet) {
     let date = new Date(tweet.created_at).toDateString();
-    // console.log("did we make it")
-    // let $tweet = $('<article>').addClass('tweet');
     const $tweets = (`
     <article class='tweets'>
       <header>
